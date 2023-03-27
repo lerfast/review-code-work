@@ -1,0 +1,101 @@
+body {
+  background-color: darkslateblue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://img5.goodfon.com/wallpaper/nbig/f/e1/tsvet-forma-fon-230.jpg);
+  background-position: center;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 60%;
+  margin: 3.125rem auto 0 auto;
+  padding: 0 1.25rem;
+}
+
+form {
+  background: darkblue;
+  padding: 2.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 1rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 130px;
+  width: 96%;
+  padding: 1rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: green;
+  color: inherit;
+  cursor: pointer;
+}

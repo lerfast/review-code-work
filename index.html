@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VL Survey Form</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">VL Survey Form</h1>
+      <p id="description">
+        Thank you for taking your time to improve the platform
+      </p>
+    </header>
+    <form id="survey-form">
+      <!--* Name -->
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+      </div>
+      <!--*Email-->
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <!--*Age-->
+      <div>
+        <label id="number-label" for="age">Age<span>(optional)</span></label>
+        <input type="number" name="age" id="number" placeholder="Age" required max="10" min="99" />
+      </div>
+      <!--* Current job describe -->
+      <p>Which option best describes your current level?</p>
+      <select id="dropdown" name="levels" required>
+        <option disabled selected value>Select current level</option>
+        <option value="trainee">Trainee</option>
+        <option value="junior">Junior</option>
+        <option value="middlesenior">Middle Senior</option>
+        <option value="senior">Senior</option>
+        <option value="other">Other</option>
+      </select>
+      <!--*Recommendations  -->
+      <p>Would you recommend VL School to a friend?</p>
+      <label>
+        <input name="user-recommend" type="radio" value="absolutely" />Absolutely
+      </label>
+      <label>
+        <input name="user-recommend" type="radio" value="yes" />Yes
+      </label>
+      <label>
+        <input name="user-recommend" type="radio" value="notrecommend" />Not
+        recommend
+      </label>
+      <!--*Favorite Feature -->
+      <p>What is your favorite feature of VL Platform?</p>
+      <select id="most-like" name="features" required>
+        <option disabled selected value>Select a feature</option>
+        <option value="codingexercises">Coding Exercises</option>
+        <option value="tests">Tests</option>
+        <option value="projects">Projects</option>
+        <option value="environment">Environment</option>
+        <option value="remotepairprogramming">Remote Pair Programming</option>
+      </select>
+      <!--*Improve  -->
+      <div>
+        <p>
+          What would you like to see us improve?
+          <span>(You can choose many options)</span>
+        </p>
+        <label>
+          <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end Projects
+        </label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end Projects
+        </label>
+        <label>
+          <input name="prefer" value="Information" type="checkbox" class="input-checkbox" />Information
+        </label>
+        <label>
+          <input name="prefer" value="fullstackprojects" type="checkbox" class="input-checkbox" />Full-stack Projects
+        </label>
+        <label>
+          <input name="prefer" value="additionalresources" type="checkbox" class="input-checkbox" />Additional Resources
+        </label>
+      </div>
+      <!--*Comments  -->
+      <div>
+        <p>Do you have an opinion or suggestion?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+      <!--*Bottom Submit  -->
+      <div>
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
